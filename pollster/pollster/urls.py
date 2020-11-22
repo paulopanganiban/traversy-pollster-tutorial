@@ -18,8 +18,10 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('polls/', include("polls.urls"))  #error ko ay putanginang polls.url ang nilagay
+    # error ko ay putanginang polls.url ang nilagay
+    path('polls/', include("polls.urls")),
     # path('polls/', include(('polls.url', 'polls'), namespace='polls')) ##wrong
-  #  path('polls/', include(('polls.urls', 'polls'), namespace='polls'))
+    #  path('polls/', include(('polls.urls', 'polls'), namespace='polls'))
+    path('', include('pages.urls')),
 
 ]
