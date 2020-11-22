@@ -1,0 +1,17 @@
+#py manage.py shell
+from polls.models import Question, Choice
+-refers to pollster/polls/models.py tapos meron tayong class na Question, Choice
+from django.utils import timezone
+-para magamit natin yung timezone.now() na method for the published date :)
+
+-create a variable sabihin natin x
+x = Question(question_text="Insert your shit", pub_date=timezone.now())
+-save it to the database using this command:
+x.save()
+
+-check for the database
+#Question.objects.all()
+#Question.objects.filter(id=1)
+-this will return a query set
+#Question.objects.get(pk=1)
+-this will return the actual question dahil sa get method

@@ -1,0 +1,4 @@
+>>> todo. fix the error and use the indexview sa documentation.
+>>> you can do it!
+>>> pollster/urls.py
+    hindi mahanap yung polls.url kaya nag error.
